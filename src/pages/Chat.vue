@@ -125,6 +125,7 @@ export default {
     // 选择要说的话
     onRightSelectMsg: function (item) {
       // 调用setShowMsgDatas放置我的聊天数据
+      console.log('Chat.vue # onRightSelectMsg')
       this.setShowMsgDatas(item.rightMsg, 'right')
       // 调用setMsg执行我的聊天信息的自动对话
       this.setMsg(item.id)

@@ -70,6 +70,7 @@ export default {
     // 选择要说的话
     onRightSelectMsg: function (item) {
       // 调用父组件（Chat.vue）中的onRightSelectMsg方法
+      console.log('ChatFeature.vue # onRightSelectMsg')
       this.$emit('onRightSelectMsg', item)
       // 隐藏展示浮层
       this.togglePop = false
